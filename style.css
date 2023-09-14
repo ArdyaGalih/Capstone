@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+body {
+  background-color: #181823;
+}
+
+/* NAVIGATION BAR */
+
+#haha {
+  color: white;
+}
+
+.ardya {
+  font-weight: 700;
+}
+
+.navv {
+  display: flex;
+  justify-content: space-between; align-items: center;
+  height: 80px;
+  margin-left: 100px; margin-right: 100px;
+}
+
+.nav-bar, .nav-bar>li{
+  list-style: none;
+  display: inline-block;
+}
+
+.listnav {
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 0 10px;
+  text-decoration: none; /* Menghapus garis bawah default pada tautan */
+  position: relative;
+  overflow: hidden;
+  color: white;
+  transition: color 0.3s;
+}
+
+.listnav::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #537FE7;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.listnav:hover {
+  color: #537FE7;
+}
+
+.listnav:hover::before {
+  transform: scaleX(1); 
+  transform-origin: center; 
+}
+
+/* HOME */
+
+.profile-picture {
+  border: #ffffff solid 5px;
+  margin-left: 30px;
+  
+}
+
+.home-page {
+  font-family: 'Montserrat', sans-serif;;
+  height: 85%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.myname{
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.myname, .hi {
+  margin-bottom: 0;
+}
+
+.social--logo {
+  height: 30px;
+}
+
+.social--logo:hover {
+  fill: #537FE7;
+}
+
+/* ABOUT ME */
+
+.p-box {
+  max-width: 800px;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: inline-block;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+/* PROJECT */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.projects-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cardbox {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  margin: 10px;
+}
+
+.head-porto {
+  margin-bottom: 20px;
+}
+
+.img-porto1 {
+  background-image: url(./image/mondian.png);
+  background-size: 99%;
+  background-repeat: no-repeat;
+}
+
+.img-porto2 {
+  background-image: url(./image/tindog.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.img-porto3 {
+  background-image: url(./image/capstone.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: white;
+}
+@media (max-width: 1200px) {
+  .profile-picture {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .profile-picture {
+    width: 400px;
+  }
+  .myname {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-picture {
+    width: 350px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-picture {
+    width: 300px;
+    margin-left: 0;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .navv{
+    justify-content: center;
+  }
+  .myname {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 576) {
+  .myname {
+    font-size: 1,5rem;
+  }
+}
